@@ -36,6 +36,15 @@ const char *error_message(int i)
 
 int main(int argc, char const *argv[])
 {
-    /* code */
+    const char *p = "Heraclitus";
+    const char *q = "Heraclitus";
+
+    // Test if 2 pointers to same string are equal or not
+    if (p == q)
+        cout << "They are the same!\n";
+    else
+    {
+        cout << "They are not the same!\n";
+    }
     return 0;
 }
