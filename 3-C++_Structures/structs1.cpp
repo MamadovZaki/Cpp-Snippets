@@ -43,6 +43,7 @@ int main(int argc, char const *argv[])
     Points x1{p1, p2};
     Points x2{p3};
     Points x4{{10, 20}}; // {20, 10} is a Point type!
+    //Points xx{p1, p2, p3}; // error
 
     return 0;
 }
