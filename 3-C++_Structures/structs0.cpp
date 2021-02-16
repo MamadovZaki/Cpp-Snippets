@@ -2,7 +2,6 @@
  * Struct
  * *******
  * A struct is an aggregate of elements of arbitrary types.
- * 
  **************************************************************************************/
 #include <iostream>
 using namespace std;
