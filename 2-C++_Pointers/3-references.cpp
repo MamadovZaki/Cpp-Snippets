@@ -29,3 +29,27 @@ void references_demo2()
     ++rr;          // var is incremented to 1
     int *pp = &rr; // pp points to var
 }
+
+void modify_array(int &a, int size) // pass by reference
+{
+    int *ptr = &a; // ptr points to whatever a is referencing
+    for (int i = 0; i < size; i++)
+    {
+        ptr[i] += 10;
+    }
+}
+
+int main(int argc, char const *argv[])
+{
+    int size = 5;
+    int x[size] = {0, 1, 2, 3, 4};
+    modify_array(x[0], 5);
+
+    cout << "modified array : " << endl;
+    for (int i = 0; i < size; i++)
+    {
+        cout << x[i] << "\t";
+    }
+    cout << endl;
+    return 0;
+}
