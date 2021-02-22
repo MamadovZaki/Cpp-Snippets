@@ -23,7 +23,12 @@ int main(int argc, char const *argv[])
 {
     colors_t mycolor;
     mycolor = blue;
-    cout << mycolor << endl; // prints 1 -- according to its position
+    //color_t hiscolor = mycolor + 1;   // error
+    colors_t hiscolor = static_cast<colors_t>(mycolor + 1); //OK
+
+    cout << mycolor << endl;     // prints 1 -- according to its position
+    cout << mycolor + 1 << endl; //prints 2
+    cout << hiscolor << endl;    // prints 2
 
     //We can explicitly specify an integer value for any of the constant values that our enumerated type can take.
     enum months_t
